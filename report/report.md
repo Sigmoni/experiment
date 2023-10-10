@@ -36,6 +36,14 @@ Note that $\mathrm{Est}_i$ is the estimate value of the $i$-th query and $\mathr
 
 We compare our prefix-sum solution with `Iris`.
 
+### Space overhead
+
+| Method        | Overhead |
+| ------------- | -------- |
+| Iris          | 50KB     |
+| Prefix-sum 8  | 512B     |
+| Prefix-sum 16 | 2KB      |
+
 ### GMQ
 
 | Iris | Prefix-sum 8 | Prefix-sum 16 |
