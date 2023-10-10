@@ -38,11 +38,18 @@ We compare our prefix-sum solution with `Iris`.
 
 ### Space overhead
 
-| Method        | Overhead |
+Since we only build up one prefix matrix for each column set, it is unfair to compare with `Iris` since it contains many other structures. The result of prefix-sum is timed 47, which is the number of sketches used by `Iris`.
+
+```
+Storage budget: 50.625KB, total used size: 50.078125KB
+Base 12, Sparse 24, Hist 17, Iris 6
+```
+
+| Method        | Overhead* |
 | ------------- | -------- |
-| Iris          | 50KB     |
-| Prefix-sum 8  | 512B     |
-| Prefix-sum 16 | 2KB      |
+| Iris          | 50.625KB     |
+| Prefix-sum 8  | 24.064KB     |
+| Prefix-sum 16 | 144.384KB      |
 
 ### GMQ
 
