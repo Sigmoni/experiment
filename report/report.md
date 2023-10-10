@@ -5,7 +5,7 @@
 For two columns $\mathcal{C}_1, \mathcal{C}_2$ in a dataset, given $(l_1, u_1), (l_2, u_2)$, try to estimate:
 
 $$
-\mathrm{Card}\left(\left\{\left(x, y\right) \in \mathcal{C}_1 \times \mathcal{C}_2 \,|\, l_1 \leqslant x \leqslant u_1 \land l_2 \leqslant y \leqslant u_2\right\}\right)
+\mathrm{Card}(\{(x, y) \in \mathcal{C}_1 \times \mathcal{C}_2 \,|\, l_1 \leqslant x \leqslant u_1 \land l_2 \leqslant y \leqslant u_2\})
 $$ 
 
 ## Experiment
@@ -27,7 +27,7 @@ $$
 Where $q_i$ is the `q-error` of the $i$-th query:
 
 $$
-q_i = \max\left\{\frac{\mathrm{Est}_i}{\mathrm{GT}_i}, \frac{\mathrm{GT}_i}{\mathrm{Est}_i}\right\}
+q_i = \max\left(\frac{\mathrm{Est}_i}{\mathrm{GT}_i}, \frac{\mathrm{GT}_i}{\mathrm{Est}_i}\right)
 $$
 
 Note that $\mathrm{Est}_i$ is the estimate value of the $i$-th query and $\mathrm{GT}_i$ is the ground-truth respectively.
